@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+  {% block body_block %}
+    <h1>Welcome to RELATIVE URL TEMPLATES</h1>
+    <!-- set app name inside the app.urls and call it here in a tag 'call it here: looking for name in app.urls'-->
+    <a href="{% url 'basic_app:other' %}">Other page here</a><br>
+    <a href="{% url 'admin:index' %}">Admin click here</a><br>
+    <a href="{% url 'index' %}">Index page here</a>
+  {% endblock %}
